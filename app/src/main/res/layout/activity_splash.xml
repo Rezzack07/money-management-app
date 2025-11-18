@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/logo_smartbudget"
+    android:contentDescription="@string/app_name"
+    android:scaleType="fitCenter"
+    android:layout_marginBottom="12dp"/>
+
+    <!-- Teks "SmartBudget" di satu baris -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textSmart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart"
+            android:textColor="#359DC0"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:textColor="#063972"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Garis bawah biru -->
+    <View
+        android:layout_width="160dp"
+        android:layout_height="3dp"
+        android:background="#54DFCA"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>
